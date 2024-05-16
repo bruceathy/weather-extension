@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 400px;
+  background-color: #6872b7;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000000a1;
+  border: 1px solid black;
+}

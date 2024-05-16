@@ -2,13 +2,9 @@ getWeather();
 
 async function getWeather() {
   const url =
-    "https://meteostat.p.rapidapi.com/stations/daily?station=10637&start=2020-01-01&end=2020-01-31";
+    "https://api.tomorrow.io/v4/weather/forecast?location=42.3478,-71.0466&apikey=fu5asOocMfxPFktgYPq5GmqBcnuvEDX2";
   const options = {
     method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "5d8ef6b029mshdf231aa011b282ep1f99a7jsn1bdc6f4d638a",
-      "X-RapidAPI-Host": "meteostat.p.rapidapi.com",
-    },
   };
 
   try {
