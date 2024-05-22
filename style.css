@@ -19,16 +19,29 @@ body {
   font-family: "Poetsen One", sans-serif;
 }
 
-h1 {
-  font-family: "Acme", sans-serif;
-  font-size: 3rem;
+.city {
+  font-size: 2.7rem;
+}
+
+.country {
+  font-size: 1.5rem;
 }
 
 .weather-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
   width: 400px;
+  overflow-x: scroll;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #000;
+}
+
+.day h3 {
+  font-size: 1.5rem;
 }
