@@ -24,14 +24,78 @@ async function getWeather() {
 
     let weatherEl = "";
     for (let day of result.forecasts) {
-      weatherEl += `
+      switch (day.text) {
+        case "Partly Cloudy":
+          weatherEl += `
       <div class="day">
         <h3>${day.day}</h3>
+        <i class="fas fa-cloud" style="color: #ffffff;"></i>
         <p>${day.text}</p>
         <p>${day.high}°C / ${day.low}°C</p>
       </div>`;
-
-      weather.innerHTML = weatherEl;
+          weather.innerHTML = weatherEl;
+          break;
+        case "Mostly Cloudy":
+          weatherEl += `
+      <div class="day">
+        <h3>${day.day}</h3>
+        <i class="fas fa-cloud" style="color: #ffffff;"></i>
+        <p>${day.text}</p>
+        <p>${day.high}°C / ${day.low}°C</p>
+      </div>`;
+          weather.innerHTML = weatherEl;
+          break;
+        case "Cloudy":
+          weatherEl += `
+      <div class="day">
+        <h3>${day.day}</h3>
+        <i class="fas fa-cloud" style="color: #ffffff;"></i>
+        <p>${day.text}</p>
+        <p>${day.high}°C / ${day.low}°C</p>
+      </div>`;
+          weather.innerHTML = weatherEl;
+          break;
+        case "Mostly Sunny":
+          weatherEl += `
+      <div class="day">
+        <h3>${day.day}</h3>
+        <i class="fas fa-sun" style="color: #ffae00;"></i>
+        <p>${day.text}</p>
+        <p>${day.high}°C / ${day.low}°C</p>
+      </div>`;
+          weather.innerHTML = weatherEl;
+          break;
+        case "Sunny":
+          weatherEl += `
+      <div class="day">
+        <h3>${day.day}</h3>
+        <i class="fas fa-sun" style="color: #ffae00;"></i>
+        <p>${day.text}</p>
+        <p>${day.high}°C / ${day.low}°C</p>
+      </div>`;
+          weather.innerHTML = weatherEl;
+          break;
+        case "Clear":
+          weatherEl += `
+      <div class="day">
+        <h3>${day.day}</h3>
+        <i class="fas fa-sun" style="color: #ffae00;"></i>
+        <p>${day.text}</p>
+        <p>${day.high}°C / ${day.low}°C</p>
+      </div>`;
+          weather.innerHTML = weatherEl;
+          break;
+        case "Rain":
+          weatherEl += `
+      <div class="day">
+        <h3>${day.day}</h3>
+        <i class="fa-solid fa-cloud-rain" style="color: #c7c7c7;"></i>
+        <p>${day.text}</p>
+        <p>${day.high}°C / ${day.low}°C</p>
+      </div>`;
+          weather.innerHTML = weatherEl;
+          break;
+      }
     }
   } catch (error) {
     console.error(error);

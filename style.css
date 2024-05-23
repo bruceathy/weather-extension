@@ -23,6 +23,10 @@ body {
   font-family: "Poetsen One", sans-serif;
 }
 
+i {
+  font-size: 3rem;
+}
+
 .city {
   font-size: 2.7rem;
 }
@@ -36,7 +40,14 @@ body {
   text-align: center;
   width: 400px;
   overflow-x: scroll;
-  margin-bottom: 0.5rem;
+  margin: auto;
+  background: linear-gradient(
+    to left,
+    #ffffff00 0%,
+    #ffffff 10%,
+    #ffffff 90%,
+    #ffffff00 100%
+  );
 }
 
 .day {
