@@ -14,34 +14,32 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  width: 500px;
+  width: 400px;
   background-color: #6872b7;
   color: #fff;
   text-shadow: 2px 2px 8px #000000a1;
-  border: 3px solid black;
-  border-radius: 7px;
   font-family: "Poetsen One", sans-serif;
 }
 
 i {
-  font-size: 3rem;
-}
-
-.city {
   font-size: 2.7rem;
 }
 
+.city {
+  font-size: 2.3rem;
+}
+
 .country {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .weather-container {
   display: flex;
   text-align: center;
-  width: 450px;
+  width: 400px;
   overflow-x: scroll;
   margin: auto;
-  padding-left: 0.6rem;
+  padding-left: 0.5rem;
   mask-image: linear-gradient(
     to left,
     transparent 0%,
@@ -58,6 +56,7 @@ i {
   justify-content: center;
   padding: 0.5rem;
   margin: 0.5rem;
+  min-width: 130px;
   background-color: #3f4570;
   border: 3px solid black;
   border-radius: 7px;
@@ -65,11 +64,11 @@ i {
 }
 
 .day h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .day p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-wrap: nowrap;
 }
 
