@@ -38,15 +38,16 @@ i {
 .weather-container {
   display: flex;
   text-align: center;
-  width: 400px;
+  width: 450px;
   overflow-x: scroll;
   margin: auto;
-  background: linear-gradient(
+  padding-left: 0.6rem;
+  mask-image: linear-gradient(
     to left,
-    #ffffff00 0%,
-    #ffffff 10%,
-    #ffffff 90%,
-    #ffffff00 100%
+    transparent 0%,
+    #000000 30px,
+    #000000 calc(100% - 30px),
+    transparent 100%
   );
 }
 
