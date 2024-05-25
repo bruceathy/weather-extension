@@ -38,6 +38,8 @@ i {
   text-align: center;
   width: 400px;
   overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
   margin: auto;
   padding-left: 0.5rem;
   mask-image: linear-gradient(
